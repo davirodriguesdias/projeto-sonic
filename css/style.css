@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#game-border {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#spike {
+    position: absolute;
+    width: 80px;
+    bottom: -6px;
+    right: 0;
+    left: 100px;
+    /* animation: spike 2s infinite linear; */
+    
+}
+
+#sonic {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    
+}
+
+.jump {
+    animation: jump 750ms ease-out ;
+}
+
+@keyframes spike {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    
+
+    50% {
+        bottom: 180px;
+    
+    }
+
+    100% {
+        bottom: 0;
+    
+    }
+}
+
+
+
