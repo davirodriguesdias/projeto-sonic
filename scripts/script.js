@@ -1,10 +1,33 @@
 var sonic = document.querySelector('img#sonic')
+var spike = document.querySelector('img#spike')
+
 
 document.addEventListener('keydown', jump);
 
-function loop = setInterval()
+var loop = setInterval(()=>{
 
-function jump() {
+    var spikePosition = spike.offsetLeft
+    var sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px','')
+
+    
+    if(spikePosition <= 90 && spikePosition > 0 && sonicPosition < 115){
+        spike.style.animation = 'none'
+        spike.style.left = `${spikePosition}px`
+
+        sonic.style.animation = 'none'
+        sonic.style.bottom = `${sonicPosition}px`
+
+        sonic.src = 'images/dead.png'
+        sonic.style.width = '115px'
+        sonic.style.marginLeft = '30px'
+
+
+        
+    }
+
+},10)
+
+function jump() { 
     sonic.style.width = '90px'
     sonic.style.marginLeft = '30px'
     sonic.classList.add('jump')
