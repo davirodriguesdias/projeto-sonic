@@ -10,7 +10,7 @@ var loop = setInterval(()=>{
     var sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px','')
 
     
-    if(spikePosition <= 90 && spikePosition > 0 && sonicPosition < 115){
+    if(spikePosition <= 90 && spikePosition > 0 && sonicPosition < 195){
         spike.style.animation = 'none'
         spike.style.left = `${spikePosition}px`
 

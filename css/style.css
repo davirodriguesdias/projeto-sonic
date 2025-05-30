@@ -4,20 +4,21 @@
     box-sizing: border-box;
 }
 
+
 #game-border {
-    width: 80%;
-    height: 500px;
-    border: 1px solid #333;
-    margin: auto;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url(../images/scenario.gif);
+    background-size: 100% 100%;
     
 }
 
 #spike {
     position: absolute;
     width: 80px;
-    bottom: -6px;
+    bottom: 72px;
     right: 0;
     animation: spike 1.5s infinite linear;
     
@@ -25,11 +26,19 @@
 
 #sonic {
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     width: 150px;
     
+    
 }
- 
+
+#floor {
+    position: absolute;
+    width: 1245px;
+    height: 80px;
+    bottom: 0;
+}
+
 .jump {
     animation: jump 750ms ease-out ;
 }
@@ -47,25 +56,25 @@
 @keyframes jump {
 
     0% {
-        bottom: 0;
+        bottom: 80px;
     }
 
     40% {
-        bottom: 180px;
+        bottom: 260px;
     
     }
 
     
 
     50% {
-        bottom: 180px;
+        bottom: 260px;
     
     }
 
 
 
     100% {
-        bottom: 0;
+        bottom: 80px;
     
     }
 }
