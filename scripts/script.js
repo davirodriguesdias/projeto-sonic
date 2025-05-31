@@ -1,5 +1,6 @@
 var sonic = document.querySelector('img#sonic')
 var spike = document.querySelector('img#spike')
+var palm = document.querySelector('img#palm')
 
 
 document.addEventListener('keydown', jump);
@@ -7,6 +8,7 @@ document.addEventListener('keydown', jump);
 var loop = setInterval(()=>{
 
     var spikePosition = spike.offsetLeft
+    var palmPosition = palm.offsetLeft
     var sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px','')
 
     
@@ -16,6 +18,11 @@ var loop = setInterval(()=>{
 
         sonic.style.animation = 'none'
         sonic.style.bottom = `${sonicPosition}px`
+
+        palm.style.animation = 'none'
+        palm.style.left = `${palmPosition}px`
+
+
 
         sonic.src = 'images/dead.png'
         sonic.style.width = '115px'

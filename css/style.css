@@ -19,8 +19,8 @@
     position: absolute;
     width: 80px;
     bottom: 72px;
-    right: 0;
     animation: spike 1.5s infinite linear;
+    /* right: 0; */
     
 }
 
@@ -39,6 +39,13 @@
     bottom: 0;
 }
 
+#palm {
+    position: absolute;
+    bottom: 70px;
+    width: 170px;
+    animation: palm 2s infinite linear;
+}
+
 .jump {
     animation: jump 750ms ease-out ;
 }
@@ -52,6 +59,17 @@
         right: 100%;
     }
 }
+
+@keyframes palm {
+    from {
+        right: -90px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
 
 @keyframes jump {
 
