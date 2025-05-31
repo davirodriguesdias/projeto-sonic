@@ -1,6 +1,11 @@
 var sonic = document.querySelector('img#sonic')
 var spike = document.querySelector('img#spike')
 var palm = document.querySelector('img#palm')
+var score = document.querySelector('div#score')
+var scorePoint = 0
+
+
+
 
 
 document.addEventListener('keydown', jump);
@@ -39,6 +44,13 @@ function jump() {
     sonic.style.marginLeft = '30px'
     sonic.classList.add('jump')
     sonic.src = 'images/spin.gif'
+    scorePoint = scorePoint + 1
+    score.innerHTML = `SCORE: ${scorePoint}`
+    
+    // if(scorePoint >= 20){
+    //     spike.style.animationDuration = '1.4s'
+    // }
+
 
 
     setTimeout(()=>{
@@ -52,3 +64,4 @@ function jump() {
 
 
 }
+
