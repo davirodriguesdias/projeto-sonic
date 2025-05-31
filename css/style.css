@@ -45,7 +45,7 @@ a:hover{
 #game-border {
     border: 5px solid rgb(7, 12, 60);
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
     /* background-image: url(../images/scenario.gif); */
@@ -76,6 +76,7 @@ a:hover{
     width: 1245px;
     height: 80px;
     bottom: 0;
+    animation: floor 2s infinite linear;
 }
 
 #palm {
@@ -108,6 +109,20 @@ a:hover{
         right: 100%;
     }
 }
+
+/* @keyframes floor {
+    0% {
+        right: -20px;
+    }
+
+    50% {
+        right: -10px;
+    }
+
+    100% {
+        right: -20px;
+    }
+} */
 
 
 @keyframes jump {
