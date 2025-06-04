@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(95, 81, 247);
+   background-image: url(../images/background.png);
 }
 
 #score {
@@ -26,16 +26,7 @@ body {
 
 }
 
-footer {
-    padding-bottom: 5px;
-    text-align: center;
-}
 
-a {
-    color: white;
-    text-decoration: none;
-    
-}
 
 a:hover{
     text-decoration: underline;
@@ -48,7 +39,7 @@ a:hover{
     height: 90vh;
     position: relative;
     overflow: hidden;
-    /* background-image: url(../images/scenario.gif); */
+    background-image: url(../images/scenario02.jpg);
     background-size: 100% 100%;
 
     

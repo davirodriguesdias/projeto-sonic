@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Sonic';
+    src: url(../fonts/sonic_advanced_2/Sonic\ Advanced\ 2.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    height: 100vh;
+    background-image: url(../images/xadrez.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    
+}
+
+#charac {
+    
+    height: 90vh;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+img {
+    width: 120px;
+    
+}
+
+h2 {
+    font-family: 'Sonic';
+    font-size: 3em;
+    text-align: center;
+    color: rgb(107, 107, 5);
+}
+
+#sonicplay a {
+    margin-top: -5px;
+    font-family: 'Sonic';
+    font-size: 1.3em;
+    display: block;
+    width: 120px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+   
+}
+
+#sonicplay {
+    border: 2px solid blue;
+    width: 120px;
+}
+
+#tailsplay a {
+    margin-top: -5px;
+    font-family: 'Sonic';
+    font-size: 1.3em;
+    display: block;
+    width: 120px;
+    text-align: center;
+    background-color: rgb(250, 250, 36);
+    color: white;
+    text-decoration: none;
+   
+}
+
+#tailsplay {
+    border: 2px solid yellow;
+    width: 120px;
+}
+
+#tails {
+    height: 152px;
+}
